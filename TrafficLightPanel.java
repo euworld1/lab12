@@ -17,7 +17,7 @@ public class TrafficLightPanel extends JPanel
 {
 	private final Color[] COLORS = { Color.GREEN,Color.YELLOW, Color.RED }; 
 	private JButton colorButton;
-	private int counter;
+	private int counter = 0;
 
 
 	/**
@@ -48,15 +48,16 @@ public class TrafficLightPanel extends JPanel
 		@Override
 		public void actionPerformed(ActionEvent e)
 		{
-			
+			counter++;
 			if(e.getSource() == colorButton) {
 				
-				counter++;
-				if (counter > 3)
-					counter = 0;
 				
+				
+				if (counter >2)
+					counter =0;
 				System.out.println(counter);
 				colorButton.setBackground(COLORS[counter]);
+				
 				//previewPanel.setBackground(clicked.getBackground());
 
 
