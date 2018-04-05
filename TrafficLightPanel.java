@@ -9,7 +9,8 @@ import javax.swing.JPanel;
 /**
  * Demonstrates using an array of JButtons.
  * 
- * @author CS121 Instructors
+ * @author Michael Arthur
+ * CS121L Section 1
  *
  */
 @SuppressWarnings("serial")
